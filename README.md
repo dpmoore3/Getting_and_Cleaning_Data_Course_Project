@@ -1,5 +1,9 @@
 Getting_and_Cleaning_Data_Course_Project
 ========================================
+The course project instructions contained the following link to the raw data: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
+
+Features.txt contains the data fields in the tables and their column numbers.  This was the source for determining the appropriate column numbers to use to find the mean and standard deviations of the measurements.
+
 The raw data files X_test.txt and X_train.txt are saved directly in the working directory (they are not left in the zip folder).  
 
 The script reads in the train and test txt files from the working directory (with header = FALSE).  
