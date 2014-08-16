@@ -1,6 +1,6 @@
 Getting_and_Cleaning_Data_Course_Project
 ========================================
-The script reads in the train and test txt files from the working directory (with header = FALSE).
+The script reads in the train and test txt files from the working directory (with header = FALSE).  The files X_test.txt and y_test.txt are saved directly in the working directory (they are not left in the zip folder).  
 
 The training and test data sets are merged into one data set using rbind.
 
