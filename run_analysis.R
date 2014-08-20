@@ -1,13 +1,31 @@
 # Getting and Cleaning Data Course Project
 
+# read subject and y (activity) files
+
+subject_test <- read.table("subject_test.txt", header=FALSE)
+subject_train <- read.table("subject_train.txt", header=FALSE)
+activity_test <- read.table("y_test.txt", header=FALSE)
+activity_train <- read.table("y_train.txt", header=FALSE)
+activity_labels <- read.table("activity_labels.txt", header=FALSE)
+
 # read training data set
 train <- read.table("X_train.txt", sep="",header=FALSE)
 
 # read test data set
 test <- read.table("X_test.txt", sep = "", header=FALSE)
 
-# merge the data sets
-total <- rbind(train,test)
+# merge activity labels and activity test & train
+activity_test_labeled <- merge(activity_test,activity_labels, by.x="V1",by.y="V1",all=TRUE)
+activity_train_labeled <- merge(activity_train,activity_labels, by.x="V1",by.y="V1",all=TRUE)
+
+# combine activity and subject labels with training data
+train2 <- cbind(train,activity_train_labeled,subject_train)
+
+# combine activity and subject labels with test data
+test2 <- cbind(test,activity_test_labeled,subject_test)
+
+# combine the data sets
+total <- rbind(train2,test2)
 
 # create new data frame
 
@@ -85,12 +103,24 @@ total_2$body_acceleration_jerk_magnitude_frequency_domain_signal_std_dev <- tota
 total_2$body_gyro_magnitude_frequency_domain_signal_std_dev <- total[,530]
 total_2$body_gyro_jerk_magnitude_frequency_domain_signal_std_dev <- total[,543]
 
-# total_2 is the extraction of the mean and Standard deviation for each measurement
+# add activity and subject labels
+
+total_2$activity <- total[,563]
+total_2$subject <- total[,564]
+
+# total_2 is the extraction of the mean and Standard deviation for each measurement 
+#    with activity and subject labels
 # it uses descriptive activity names and appropriately labels the data set with descriptive variable names
 
-# creates a second, independent tidy data set with the average of each variable for each activity and each subject
+# creates a second, independent tidy data set with the average of each variable 
+#    for each activity and each subject
 
-variable_means <- data.frame(colMeans(total_2))
+variable_means <- aggregate(total_2,by=total_2$activity,FUN = "mean")
+
+# replace Group.1 & Group.2 labels with descriptive labels for activity and subject
+
+colnames(variable_means)[1] <- "Activity"
+colnames(variable_means)[2] <- "Subject"
 
 # create a txt file to upload using row.name=FALSE
 
