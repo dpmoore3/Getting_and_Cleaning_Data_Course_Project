@@ -1,0 +1,215 @@
+Getting and Cleaning Data Course Project Code Book
+
+This code book modifies the code descriptions provide with the data (per the project evaluation directions).  It does not replicate information found in features_info.txt, but expands upon it where necessary.
+The tidy data set created, variable_means.txt, contains the mean for 66 measurement variables 
+(33 means and 33 standard deviations) grouped by Activity and Subject.  Below are the columns from the tidy data set.
+
+Activity – the means of measurement variables were grouped by this variable and Subject
+1 WALKING
+2 WALKING_UPSTAIRS
+3 WALKING_DOWNSTAIRS
+4 SITTING
+5 STANDING
+6 LAYING
+
+Subject – the means of measurement variables were grouped by this variable and Activity
+ Numbered 1 – 30 representing 30 volunteers (from age 19-48 )
+
+body_acceleration_signal_x_mean 
+– source:  tBodyAcc-XYZ - mean (X, Y or Z indicate direction; see features.txt)
+
+body_acceleration_signal_y_mean 
+– source:  tBodyAcc-XYZ - mean (X, Y or Z indicate direction; see features.txt)
+
+body_acceleration_signal_z_mean 
+– source:  tBodyAcc-XYZ - mean (X, Y or Z indicate direction; see features.txt)
+
+gravity_acceleration_signal_x_mean 
+– source:  tGravityAcc-XYZ - mean (X, Y or Z indicate direction; see features.txt)
+
+gravity_acceleration_signal_y_mean
+- source:  tGravityAcc-XYZ - mean (X, Y or Z indicate direction; see features.txt)
+
+gravity_acceleration_signal_z_mean
+- source:  tGravityAcc-XYZ - mean (X, Y or Z indicate direction; see features.txt)
+
+body_acceleration_jerk_signal_x_mean
+– source:  tBodyAccJerk-XYZ - mean (X, Y or Z indicate direction; see features.txt)
+
+body_acceleration_jerk_signal_y_mean
+– source:  tBodyAccJerk-XYZ - mean (X, Y or Z indicate direction; see features.txt)
+
+body_acceleration_jerk_signal_z_mean
+– source:  tBodyAccJerk-XYZ - mean (X, Y or Z indicate direction; see features.txt)
+
+body_gyro_signal_x_mean
+ – source:  tBodyGyro-XYZ - mean (X, Y or Z indicate direction; see features.txt)
+
+body_gyro_signal_y_mean
+– source: tBodyGyro-XYZ - mean (X, Y or Z indicate direction; see features.txt)
+
+body_gyro_signal_z_mean
+– source: tBodyGyro-XYZ - mean (X, Y or Z indicate direction; see features.txt)
+
+body_gyro_jerk_signal_x_mean
+ – source: tBodyGyroJerk-XYZ - mean (X, Y or Z indicate direction; see features.txt)
+
+body_gyro_jerk_signal_y_mean
+– source: tBodyGyroJerk-XYZ - mean (X, Y or Z indicate direction; see features.txt)
+
+body_gyro_jerk_signal_z_mean
+– source: tBodyGyroJerk-XYZ - mean (X, Y or Z indicate direction; see features.txt)
+
+body_acceleration_magnitude_mean
+ – source: tBodyAccMag - mean (see features.txt)
+
+gravity_acceleration_magnitude_mean
+ – source: tGravityAccMag - mean (see features.txt)
+
+body_acceleration_jerk_magnitude_mean
+ – source: tBodyAccJerkMag - mean (see features.txt)
+
+body_gyro_magnitude_mean
+ – source: tBodyGyroMag - mean (see features.txt)
+
+body_gyro_jerk_magnitude_mean
+ – source: tBodyGyroJerkMag - mean (see features.txt)
+
+body_acceleration_frequency_domain_signal_x_mean
+ – source: fBodyAcc-XYZ - mean (X, Y or Z indicate direction; see features.txt)
+
+body_acceleration_frequency_domain_signal_y_mean
+– source: fBodyAcc-XYZ - mean (X, Y or Z indicate direction; see features.txt)
+
+body_acceleration_frequency_domain_signal_z_mean
+– source: fBodyAcc-XYZ - mean (X, Y or Z indicate direction; see features.txt)
+
+body_acceleration_jerk_frequency_domain_signal_x_mean
+ – source: fBodyAccJerk-XYZ - mean (X, Y or Z indicate direction; see features.txt)
+
+body_acceleration_jerk_frequency_domain_signal_y_mean
+– source: fBodyAccJerk-XYZ - mean (X, Y or Z indicate direction; see features.txt)
+
+body_acceleration_jerk_frequency_domain_signal_z_mean
+ – source: fBodyAccJerk-XYZ - mean (X, Y or Z indicate direction; see features.txt)
+
+body_gyro_frequency_domain_signal_x_mean
+ – source: fBodyGyro-XYZ - mean (X, Y or Z indicate direction; see features.txt)
+
+body_gyro_frequency_domain_signal_y_mean
+– source: fBodyGyro-XYZ - mean (X, Y or Z indicate direction; see features.txt)
+
+body_gyro_frequency_domain_signal_z_mean
+– source: fBodyGyro-XYZ - mean (X, Y or Z indicate direction; see features.txt)
+
+body_acceleration_magnitude_frequency_domain_signal_mean
+ – source: fBodyAccMag - mean (see features.txt)
+
+body_acceleration_jerk_magnitude_frequency_domain_signal_mean
+ – source: fBodyAccJerkMag - mean (see features.txt)
+
+body_gyro_magnitude_frequency_domain_signal_mean
+ – source: fBodyGyroMag - mean (see features.txt)
+
+body_gyro_jerk_magnitude_frequency_domain_signal_mean
+ – source: fBodyGyroJerkMag - mean (see features.txt)
+
+body_acceleration_signal_x_std_dev 
+– source: tBodyAcc-XYZ - std (X, Y or Z indicate direction; see features.txt)
+
+body_acceleration_signal_y_std_dev 
+– source: tBodyAcc-XYZ - std (X, Y or Z indicate direction; see features.txt)
+
+body_acceleration_signal_z_std_dev 
+– source: tBodyAcc-XYZ - std (X, Y or Z indicate direction; see features.txt)
+
+gravity_acceleration_signal_x_std_dev 
+– source: tGravityAcc-XYZ - std (X, Y or Z indicate direction; see features.txt)
+
+gravity_acceleration_signal_y_std_dev
+- source: tGravityAcc-XYZ - std (X, Y or Z indicate direction; see features.txt)
+
+gravity_acceleration_signal_z_std_dev
+- source: tGravityAcc-XYZ - std (X, Y or Z indicate direction; see features.txt)
+
+body_acceleration_jerk_signal_x_std_dev
+– source: tBodyAccJerk-XYZ - std (X, Y or Z indicate direction; see features.txt)
+
+body_acceleration_jerk_signal_y_std_dev
+– source: tBodyAccJerk-XYZ - std (X, Y or Z indicate direction; see features.txt)
+
+body_acceleration_jerk_signal_z_std_dev
+– source: tBodyAccJerk-XYZ - std (X, Y or Z indicate direction; see features.txt)
+
+body_gyro_signal_x_std_dev
+ – source: tBodyGyro-XYZ - std (X, Y or Z indicate direction; see features.txt)
+
+body_gyro_signal_y_std_dev
+– source: tBodyGyro-XYZ - std (X, Y or Z indicate direction; see features.txt)
+
+body_gyro_signal_z_std_dev
+– source: tBodyGyro-XYZ - std (X, Y or Z indicate direction; see features.txt)
+
+body_gyro_jerk_signal_x_std_dev
+ – source: tBodyGyroJerk-XYZ - std (X, Y or Z indicate direction; see features.txt)
+
+body_gyro_jerk_signal_y_std_dev
+– source: tBodyGyroJerk-XYZ - std (X, Y or Z indicate direction; see features.txt)
+
+body_gyro_jerk_signal_z_std_dev
+– source: tBodyGyroJerk-XYZ - std (X, Y or Z indicate direction; see features.txt)
+
+body_acceleration_magnitude_std_dev
+ – source: tBodyAccMag - std (see features.txt)
+
+gravity_acceleration_magnitude_std_dev
+ – source: tGravityAccMag - std (see features.txt)
+
+body_acceleration_jerk_magnitude_std_dev
+ – source: tBodyAccJerkMag - std (see features.txt)
+
+body_gyro_magnitude_std_dev
+ – source: tBodyGyroMag - std (see features.txt)
+
+body_gyro_jerk_magnitude_std_dev
+ – source: tBodyGyroJerkMag - std (see features.txt)
+
+body_acceleration_frequency_domain_signal_x_std_dev
+ – source: fBodyAcc-XYZ - std (X, Y or Z indicate direction; see features.txt)
+
+body_acceleration_frequency_domain_signal_y_std_dev
+– source: fBodyAcc-XYZ - std (X, Y or Z indicate direction; see features.txt)
+
+body_acceleration_frequency_domain_signal_z_std_dev
+– source: fBodyAcc-XYZ - std (X, Y or Z indicate direction; see features.txt)
+
+body_acceleration_jerk_frequency_domain_signal_x_std_dev
+ – source: fBodyAccJerk-XYZ - std (X, Y or Z indicate direction; see features.txt)
+
+body_acceleration_jerk_frequency_domain_signal_y_std_dev
+– source: fBodyAccJerk-XYZ - std (X, Y or Z indicate direction; see features.txt)
+
+body_acceleration_jerk_frequency_domain_signal_z_std_dev
+ – source: fBodyAccJerk-XYZ - std (X, Y or Z indicate direction; see features.txt)
+
+body_gyro_frequency_domain_signal_x_std_dev
+ – source: fBodyGyro-XYZ - std (X, Y or Z indicate direction; see features.txt)
+
+body_gyro_frequency_domain_signal_y_std_dev
+– source: fBodyGyro-XYZ - std (X, Y or Z indicate direction; see features.txt)
+
+body_gyro_frequency_domain_signal_z_std_dev
+– source: fBodyGyro-XYZ - std (X, Y or Z indicate direction; see features.txt)
+
+body_acceleration_magnitude_frequency_domain_signal_std_dev
+ – source: fBodyAccMag - std (see features.txt)
+
+body_acceleration_jerk_magnitude_frequency_domain_signal_std_dev
+ – source: fBodyAccJerkMag - std (see features.txt)
+
+body_gyro_magnitude_frequency_domain_signal_std_dev
+ – source: fBodyGyroMag - std (see features.txt)
+
+body_gyro_jerk_magnitude_frequency_domain_signal_std_dev
+ – source: fBodyGyroJerkMag - std (see features.txt)
+
