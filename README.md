@@ -20,6 +20,8 @@ Next, the first variable values are replaced with the appropriate values from th
 
 Another data frame is created containing only the means for each activity, subject and measurement combination.  The aggregate function is used to accomplish this.
 
+The aggregate function creates two column headers that are not descriptive (Group.1 and Group.2).  After applying the aggregate function, I change those column names to be descriptive.
+
 Lastly, a txt file is created to upload.
 
 
