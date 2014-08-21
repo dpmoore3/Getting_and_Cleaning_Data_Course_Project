@@ -115,7 +115,7 @@ total_2$subject <- total[,564]
 # creates a second, independent tidy data set with the average of each variable 
 #    for each activity and each subject
 
-variable_means <- aggregate(total_2,by=total_2$activity,FUN = "mean")
+variable_means <- aggregate(total_2,by=list(total_2$activity,total_2$subject),FUN = "mean")
 
 # replace Group.1 & Group.2 labels with descriptive labels for activity and subject
 
@@ -125,4 +125,3 @@ colnames(variable_means)[2] <- "Subject"
 # create a txt file to upload using row.name=FALSE
 
 write.table(variable_means,file="variable_means.txt",row.name=FALSE)
-
